@@ -11,7 +11,10 @@
   <xsl:template match="*|fhir:Patient">
     <xsl:variable name="id" select="fhir:id"/>
     <xsl:for-each select="fhir:name">
+      
       <xsl:value-of select="$id/@value"/><xsl:text>;</xsl:text>
+      
+      <!-- FHIR data type: HumanName -->
       <xsl:value-of select="fhir:use/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:text/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:family/@value"/><xsl:text>;</xsl:text>
@@ -20,6 +23,7 @@
       <xsl:value-of select="fhir:suffix/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:period/fhir:start/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:period/fhir:end/@value"/><xsl:text>&#xa;</xsl:text>
+      
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
