@@ -11,6 +11,7 @@
   <xsl:template match="*|fhir:Medication">
     <xsl:variable name="id" select="fhir:id"/>
     <xsl:for-each select="fhir:ingredient">
+      
       <xsl:value-of select="$id/@value"/><xsl:text>;</xsl:text>
 
       <!-- FHIR data type: CodeableConcept -->
