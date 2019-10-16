@@ -14,7 +14,7 @@
 
   <xsl:template match="*|fhir:Medication">
 
-    <!-- Medication id -->
+    <!-- id -->
     <xsl:value-of select="fhir:id/@value"/><xsl:text>;</xsl:text>
 
     <!-- FHIR data type: CodeableConcept -->
