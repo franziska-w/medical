@@ -19,6 +19,8 @@
     <xsl:value-of select="fhir:status/@value"/><xsl:text>;</xsl:text>
     <xsl:value-of select="fhir:manufacturer/fhir:reference/@value"/><xsl:text>;</xsl:text>
     <xsl:value-of select="fhir:manufacturer/fhir:type/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:manufacturer/fhir:display/@value"/><xsl:text>;</xsl:text>
+    <!-- add manufacturer identifier here if required -->
     <xsl:value-of select="fhir:form/fhir:coding/fhir:system/@value"/><xsl:text>;</xsl:text>
     <xsl:value-of select="fhir:form/fhir:coding/fhir:version/@value"/><xsl:text>;</xsl:text>
     <xsl:value-of select="fhir:form/fhir:coding/fhir:code/@value"/><xsl:text>;</xsl:text>
