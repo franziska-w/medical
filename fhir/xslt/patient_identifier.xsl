@@ -11,8 +11,13 @@
   <xsl:template match="*|fhir:Patient">
     <xsl:variable name="id" select="fhir:id"/>
     <xsl:for-each select="fhir:identifier">
+      
       <xsl:value-of select="$id/@value"/><xsl:text>;</xsl:text>
+      
       <xsl:value-of select="fhir:use/@value"/><xsl:text>;</xsl:text>
+      
+      <!-- FHIR data type: Identifier -->
+      <!-- FHIR data type: CodeableConcept -->
       <xsl:value-of select="fhir:type/fhir:coding/fhir:system/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:type/fhir:coding/fhir:version/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:type/fhir:coding/fhir:code/@value"/><xsl:text>;</xsl:text>
@@ -23,6 +28,7 @@
       <xsl:value-of select="fhir:value/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:period/fhir:start/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:period/fhir:end/@value"/><xsl:text>&#xa;</xsl:text>
+      
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
