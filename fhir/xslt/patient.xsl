@@ -9,6 +9,7 @@
 <!-- ======================================================================= -->
 
   <xsl:template match="*|fhir:Patient">
+    
     <xsl:value-of select="fhir:id/@value"/><xsl:text>;</xsl:text>
     
     <xsl:value-of select="fhir:active/@value"/><xsl:text>;</xsl:text>
