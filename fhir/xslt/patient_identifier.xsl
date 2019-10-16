@@ -14,9 +14,15 @@
       <xsl:value-of select="$id/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:use/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:type/fhir:coding/fhir:system/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:type/fhir:coding/fhir:version/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:type/fhir:coding/fhir:code/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:type/fhir:coding/fhir:display/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:type/fhir:coding/fhir:userSelected/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:type/fhir:text/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:system/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:value/@value"/><xsl:text>&#xa;</xsl:text>
+      <xsl:value-of select="fhir:value/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:period/fhir:start/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:period/fhir:end/@value"/><xsl:text>&#xa;</xsl:text>
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
