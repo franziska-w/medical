@@ -3,16 +3,16 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fhir="http://hl7.org/fhir">
 
+<!-- Set separator and new line characters -->
+<xsl:variable name="customSeparator" select="';'"/>
+<xsl:variable name="customNewLine" select="'&#xa;'"/>
+  
 <!-- ======================================================================= -->
 <!-- Template:    Match id node and Medication node                          -->
 <!-- Description: Extract values of nodes appearing 0...1 per Medication     -->
 <!-- ======================================================================= -->
 
   <xsl:template match="*|fhir:Medication">
-
-    <!-- Set separator and new line characters -->
-    <xsl:variable name="customSeparator" select="';'"/>
-    <xsl:variable name="customNewLine" select="'&#xa;'"/>
 
     <!-- Medication id -->
     <xsl:value-of select="fhir:id/@value"/><xsl:text>;</xsl:text>
