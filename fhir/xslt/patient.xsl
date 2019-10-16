@@ -14,7 +14,7 @@
 
   <xsl:template match="*|fhir:Patient">
 
-    <!-- Patient id -->
+    <!-- id -->
     <xsl:value-of select="fhir:id/@value"/><xsl:value-of select="$customSeparator"/>
     
     <xsl:value-of select="fhir:active/@value"/><xsl:value-of select="$customSeparator"/>
