@@ -13,10 +13,16 @@
     <xsl:for-each select="fhir:address">
       <xsl:value-of select="$id/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:use/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:type/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:text/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:line/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:city/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:district/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:state/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:postalCode/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:country/@value"/><xsl:text>&#xa;</xsl:text>
+      <xsl:value-of select="fhir:country/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:period/fhir:start/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:period/fhir:end/@value"/><xsl:text>&#xa;</xsl:text>
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
