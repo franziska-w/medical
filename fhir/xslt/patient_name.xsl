@@ -13,8 +13,11 @@
     <xsl:for-each select="fhir:name">
       <xsl:value-of select="$id/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:use/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:text/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:family/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:given/@value"/><xsl:text>&#xa;</xsl:text>
+      <xsl:value-of select="fhir:given/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:prefix/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:suffix/@value"/><xsl:text>&#xa;</xsl:text>
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
