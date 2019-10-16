@@ -3,25 +3,17 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fhir="http://hl7.org/fhir">
 
-  <xsl:template match="fhir:Medication">
-    <xsl:variable name="medicationCode" select="fhir:code/fhir:coding"/>
-    <xsl:variable name="medicationForm" select="fhir:form/fhir:coding"/>
-    <xsl:for-each select="fhir:ingredient">
-      <xsl:value-of select="$medicationCode/fhir:system/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="$medicationCode/fhir:code/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="$medicationCode/fhir:display/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="$medicationForm/fhir:system/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="$medicationForm/fhir:coding/fhir:code/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="$medicationForm/fhir:display/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:system/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:display/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:strength/fhir:numerator/fhir:value/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:strength/fhir:numerator/fhir:system/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:strength/fhir:numerator/fhir:code/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:strength/fhir:denominator/fhir:value/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:strength/fhir:denominator/fhir:system/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:strength/fhir:denominator/fhir:code/@value"/><xsl:text>&#xa;</xsl:text>
-    </xsl:for-each>
+  <xsl:template match="*|fhir:Medication">
+    <xsl:value-of select="fhir:id/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:contained/fhir:Organization/fhir:id/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:contained/fhir:Organization/fhir:name/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:code/fhir:coding/fhir:system/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:code/fhir:coding/fhir:code/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:code/fhir:coding/fhir:display/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:form/fhir:coding/fhir:system/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:form/fhir:coding/fhir:code/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:form/fhir:coding/fhir:display/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:batch/fhir:lotNumber/@value"/><xsl:text>;</xsl:text>
+    <xsl:value-of select="fhir:batch/fhir:expirationDate/@value"/><xsl:text>&#xa;</xsl:text>
   </xsl:template>
 </xsl:stylesheet>
