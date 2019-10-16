@@ -17,7 +17,7 @@
     <xsl:variable name="id" select="fhir:id"/>
     <xsl:for-each select="fhir:ingredient">
       
-      <!-- Medication id -->
+      <!-- id -->
       <xsl:value-of select="$id/@value"/><xsl:value-of select="$customSeparator"/>
 
       <!-- FHIR data type: CodeableConcept -->
