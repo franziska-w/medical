@@ -17,7 +17,9 @@
       <xsl:value-of select="fhir:family/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:given/@value"/><xsl:text>;</xsl:text>
       <xsl:value-of select="fhir:prefix/@value"/><xsl:text>;</xsl:text>
-      <xsl:value-of select="fhir:suffix/@value"/><xsl:text>&#xa;</xsl:text>
+      <xsl:value-of select="fhir:suffix/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:period/fhir:start/@value"/><xsl:text>;</xsl:text>
+      <xsl:value-of select="fhir:period/fhir:end/@value"/><xsl:text>&#xa;</xsl:text>
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
