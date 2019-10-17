@@ -25,6 +25,14 @@
     <xsl:value-of select="fhir:code/fhir:coding/fhir:userSelected/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:code/fhir:text/@value"/><xsl:value-of select="$customSeparator"/>
 
+    <xsl:value-of select="fhir:status/@value"/><xsl:value-of select="$customSeparator"/>
+
+    <!-- FHIR data type: Reference -->
+    <xsl:value-of select="fhir:manufacturer/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:manufacturer/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
+    <!-- add manufacturer identifier here if required -->
+    <xsl:value-of select="fhir:manufacturer/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
+    
     <!-- FHIR data type: CodeableConcept -->
     <xsl:value-of select="fhir:form/fhir:coding/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:form/fhir:coding/fhir:version/@value"/><xsl:value-of select="$customSeparator"/>
@@ -33,13 +41,19 @@
     <xsl:value-of select="fhir:form/fhir:coding/fhir:userSelected/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:form/fhir:text/@value"/><xsl:value-of select="$customSeparator"/>
 
-    <xsl:value-of select="fhir:status/@value"/><xsl:value-of select="$customSeparator"/>
-
-    <!-- FHIR data type: Reference -->
-    <xsl:value-of select="fhir:manufacturer/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:manufacturer/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
-    <!-- add manufacturer identifier here if required -->
-    <xsl:value-of select="fhir:manufacturer/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
+    <!-- FHIR data type: Ratio -->
+    <!-- FHIR data type: Quantity -->
+    <xsl:value-of select="fhir:amount/fhir:numerator/fhir:value/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:numerator/fhir:comparator/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:numerator/fhir:unit/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:numerator/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:numerator/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
+    <!-- FHIR data type: Quantity -->
+    <xsl:value-of select="fhir:amount/fhir:denominator/fhir:value/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:denominator/fhir:comparator/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:denominator/fhir:unit/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:denominator/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:amount/fhir:denominator/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
 
     <xsl:value-of select="fhir:batch/fhir:lotNumber/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:batch/fhir:expirationDate/@value"/><xsl:value-of select="$customNewLine"/>
