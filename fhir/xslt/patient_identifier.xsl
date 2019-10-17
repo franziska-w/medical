@@ -19,9 +19,9 @@
       <!-- id -->
       <xsl:value-of select="$id/@value"/><xsl:value-of select="$customSeparator"/>
       
-      <!-- FHIR data type: Identifier -->
+      <!-- Patient/identifier has FHIR data type: Identifier -->
       <xsl:value-of select="fhir:use/@value"/><xsl:value-of select="$customSeparator"/>
-      <!-- FHIR data type: CodeableConcept -->
+      <!-- Patient/identifier/type has FHIR data type: CodeableConcept -->
       <xsl:value-of select="fhir:type/fhir:coding/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:type/fhir:coding/fhir:version/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:type/fhir:coding/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
