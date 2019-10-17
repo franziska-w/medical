@@ -19,7 +19,7 @@
       <!-- id -->
       <xsl:value-of select="$id/@value"/><xsl:value-of select="$customSeparator"/>
       
-      <!-- FHIR data type: Address -->
+      <!-- Patient/Address has FHIR data type: Address -->
       <xsl:value-of select="fhir:use/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:text/@value"/><xsl:value-of select="$customSeparator"/>
