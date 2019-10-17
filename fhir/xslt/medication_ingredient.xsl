@@ -20,7 +20,7 @@
       <!-- id -->
       <xsl:value-of select="$id/@value"/><xsl:value-of select="$customSeparator"/>
 
-      <!-- FHIR data type: CodeableConcept -->
+      <!-- Medication/ingredient/itemCodeableConcept has FHIR data type: CodeableConcept -->
       <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:version/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
@@ -28,7 +28,7 @@
       <xsl:value-of select="fhir:itemCodeableConcept/fhir:coding/fhir:userSelected/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:itemCodeableConcept/fhir:text/@value"/><xsl:value-of select="$customSeparator"/>
 
-      <!-- FHIR data type: Reference -->
+      <!-- Medication/ingredient/itemReference has FHIR data type: Reference -->
       <xsl:value-of select="fhir:itemReference/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:itemReference/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
       <!-- Add item reference identifier here if required -->
@@ -36,14 +36,14 @@
 
       <xsl:value-of select="fhir:isActive/@value"/><xsl:value-of select="$customSeparator"/>
 
-      <!-- FHIR data type: Ratio -->
-      <!-- FHIR data type: Quantity -->
+      <!-- Medication/ingredient/strength has FHIR data type: Ratio -->
+      <!-- Medication/ingredient/strength/numerator has FHIR data type: Quantity -->
       <xsl:value-of select="fhir:strength/fhir:numerator/fhir:value/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:strength/fhir:numerator/fhir:comparator/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:strength/fhir:numerator/fhir:unit/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:strength/fhir:numerator/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:strength/fhir:numerator/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
-      <!-- FHIR data type: Quantity -->
+      <!-- Medication/ingredient/strength/denominator has FHIR data type: Quantity -->
       <xsl:value-of select="fhir:strength/fhir:denominator/fhir:value/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:strength/fhir:denominator/fhir:comparator/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:strength/fhir:denominator/fhir:unit/@value"/><xsl:value-of select="$customSeparator"/>
