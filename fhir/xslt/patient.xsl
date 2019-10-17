@@ -7,7 +7,7 @@
 <xsl:variable name="customSeparator" select="';'"/>
 <xsl:variable name="customNewLine" select="'&#xa;'"/>
   
-<!-- Produces data with header:
+<!-- Header:
      id;active;gender;birthDate;deceasedBoolean;deceasedDateTime;multipleBirthBoolean;multipleBirthInteger;managingOrganization_reference;managingOrganization_type;managingOrganization_display -->
 
 <!-- ======================================================================= -->
