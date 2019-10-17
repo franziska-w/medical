@@ -6,6 +6,9 @@
 <!-- Set separator and new line characters -->
 <xsl:variable name="customSeparator" select="';'"/>
 <xsl:variable name="customNewLine" select="'&#xa;'"/>
+  
+<!-- Produces data with header:
+     id;active;gender;birthDate;deceasedBoolean;deceasedDateTime;multipleBirthBoolean;multipleBirthInteger;managingOrganization_reference;managingOrganization_type;managingOrganization_display -->
 
 <!-- ======================================================================= -->
 <!-- Template:    Match id node and Patient node                             -->
