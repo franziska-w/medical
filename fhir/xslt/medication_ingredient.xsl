@@ -7,6 +7,9 @@
 <xsl:variable name="customSeparator" select="';'"/>
 <xsl:variable name="customNewLine" select="'&#xa;'"/>
 
+<!-- Header information:
+     id;coding_system;coding_version;coding_code;coding_display;coding_userSelected;text;itemRef_reference;itemRef_type;itemRef_display;isActive;numerator_value;numerator_comparator;numerator_unit;numerator_system;numerator_code;denominator_value;denominator_comparator;denominator_unit;denominator_system;denominator_code -->
+  
 <!-- ======================================================================= -->
 <!-- Template:    Match id node and Medication node                          -->
 <!-- Description: Extract values of nodes appearing 0...1 per ingredient     -->
