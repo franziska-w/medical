@@ -27,7 +27,7 @@
     <xsl:value-of select="fhir:multipleBirthBoolean/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:multipleBirthInteger/@value"/><xsl:value-of select="$customSeparator"/>
     
-    <!-- FHIR data type: Reference -->
+    <!-- Patient/managingOrganization has FHIR data type: Reference -->
     <xsl:value-of select="fhir:managingOrganization/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:managingOrganization/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
     <!-- add managing organization identifier here if required -->
