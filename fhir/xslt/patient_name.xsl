@@ -7,6 +7,9 @@
 <xsl:variable name="customSeparator" select="';'"/>
 <xsl:variable name="customNewLine" select="'&#xa;'"/>
 
+<!-- Header information:
+     id;name_use;name_text;name_family;name_given;name_prefix;name_suffix;name_period_start;name_period_end -->
+  
 <!-- ======================================================================= -->
 <!-- Template:    Match id node and Patient node                             -->
 <!-- Description: Extract values of nodes appearing 0...1 per name           -->
