@@ -1,0 +1,17 @@
+{
+   "type" : "record",
+   "name" : "medication_ingredient_brief_version",
+   "namespace" : "http://hl7.org/fhir",
+   "fields" : [
+      { "name" : "id" , "type" : "string" },
+      { "name" : "coding_system" , "type" : "string" },
+      { "name" : "coding_code" , "type" : "string" },
+      { "name" : "coding_display" , "type" : "string" },
+      { "name" : "numerator_value" , "type" : "string" },
+      { "name" : "numerator_unit" , "type" : "string" },
+      { "name" : "numerator_system" , "type" : "string" },
+      { "name" : "denominator_value" , "type" : "string" },
+      { "name" : "denominator_unit" , "type" : "string" },
+      { "name" : "denominator_system" , "type" : "string" }
+   ]
+}
