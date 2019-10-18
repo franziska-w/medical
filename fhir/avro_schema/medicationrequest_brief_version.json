@@ -1,0 +1,15 @@
+{
+   "type" : "record",
+   "name" : "medication_request_brief_version",
+   "namespace" : "http://hl7.org/fhir",
+   "fields" : [
+      { "name" : "id" , "type" : "string" },
+      { "name" : "Med_id" , "type" : "string" },
+      { "name" : "Med_code_system" , "type" : "string" },
+      { "name" : "Med_code_code" , "type" : "string" },
+      { "name" : "Med_code_display" , "type" : "string" },
+      { "name" : "subject_reference" , "type" : "string" },
+      { "name" : "subject_type" , "type" : "string" },
+      { "name" : "subject_display" , "type" : "string" }
+   ]
+}
