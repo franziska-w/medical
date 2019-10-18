@@ -36,7 +36,7 @@
       <!-- Medication/ingredient/strength/denominator has FHIR data type: Quantity -->
       <xsl:value-of select="fhir:strength/fhir:denominator/fhir:value/@value"/><xsl:value-of select="$customSeparator"/>
       <xsl:value-of select="fhir:strength/fhir:denominator/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
-      <xsl:value-of select="fhir:strength/fhir:denominator/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
+      <xsl:value-of select="fhir:strength/fhir:denominator/fhir:code/@value"/><xsl:value-of select="$customNewLine"/>
 
     </xsl:for-each>
   </xsl:template>
