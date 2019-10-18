@@ -38,15 +38,21 @@
     <!-- add reported reference identifier here if required -->
     <xsl:value-of select="fhir:reportedReference/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
 
-    <!-- MedicationRequest/Medication has FHIR data type: CodeableConcept -->
-    <xsl:value-of select="fhir:Medication/fhir:id/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:version/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:userSelected/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:text/@value"/><xsl:value-of select="$customSeparator"/>
+    <!-- MedicationRequest/contained/Medication has FHIR data type: CodeableConcept -->
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:id/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:version/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:userSelected/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:text/@value"/><xsl:value-of select="$customSeparator"/>
 
+    <!-- MedicationRequest/medicationReference has FHIR data type: Reference -->
+    <xsl:value-of select="fhir:medicationReference/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:medicationReference/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
+    <!-- add medication reference identifier here if required -->
+    <xsl:value-of select="fhir:medicationReference/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
+    
     <!-- MedicationRequest/subject has FHIR data type: Reference -->
     <xsl:value-of select="fhir:subject/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:subject/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
