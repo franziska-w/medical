@@ -30,7 +30,7 @@
     <xsl:value-of select="fhir:subject/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:subject/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
     <!-- add subject identifier here if required -->
-    <xsl:value-of select="fhir:subject/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:subject/fhir:display/@value"/><xsl:value-of select="$customNewLine"/>
 
   </xsl:template>
 </xsl:stylesheet>
