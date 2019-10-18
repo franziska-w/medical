@@ -8,7 +8,7 @@
 <xsl:variable name="customNewLine" select="'&#xa;'"/>
 
 <!-- Header information:
-     id;Med_id;Med_code_system;Med_code_code;Med_code_display;subject_reference;subject_type;subject_display -->
+     id;Med_id;Med_code_system;Med_code_code;Med_code_display;medicationRef;subject_reference;subject_type;subject_display -->
 
 <!-- ======================================================================= -->
 <!-- Template:    Match id node and MedicationRequest node                   -->
@@ -21,11 +21,14 @@
     <xsl:value-of select="fhir:id/@value"/><xsl:value-of select="$customSeparator"/>
 
     <!-- MedicationRequest/Medication has FHIR data type: CodeableConcept -->
-    <xsl:value-of select="fhir:Medication/fhir:id/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
-    <xsl:value-of select="fhir:Medication/fhir:code/fhir:coding/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:id/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:system/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
 
+    <!-- MedicationRequest/medicationReference has FHIR data type: Reference -->
+    <xsl:value-of select="fhir:medicationReference/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
+    
     <!-- MedicationRequest/subject has FHIR data type: Reference -->
     <xsl:value-of select="fhir:subject/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:subject/fhir:type/@value"/><xsl:value-of select="$customSeparator"/>
