@@ -8,7 +8,7 @@
 <xsl:variable name="customNewLine" select="'&#xa;'"/>
 
 <!-- Header information:
-     id;status;intent;priority;doNotPerform;reportedBoolean;Med_id;Med_code_system;Med_code_version;Med_code_display;Med_code_display;Med_code_userSelected;Med_code_text;subject_reference;subject_type;subject_display -->
+     id;Med_id;Med_code_system;Med_code_code;Med_code_display;subject_reference;subject_type;subject_display -->
 
 <!-- ======================================================================= -->
 <!-- Template:    Match id node and MedicationRequest node                   -->
