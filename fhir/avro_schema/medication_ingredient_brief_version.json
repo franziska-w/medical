@@ -8,10 +8,10 @@
       { "name" : "coding_code" , "type" : "string" },
       { "name" : "coding_display" , "type" : "string" },
       { "name" : "numerator_value" , "type" : "int" },
-      { "name" : "numerator_unit" , "type" : "string" },
       { "name" : "numerator_system" , "type" : "string" },
+      { "name" : "numerator_code" , "type" : "string" },
       { "name" : "denominator_value" , "type" : "int" },
-      { "name" : "denominator_unit" , "type" : "string" },
-      { "name" : "denominator_system" , "type" : "string" }
+      { "name" : "denominator_system" , "type" : "string" },
+      { "name" : "denominator_code" , "type" : "string" }
    ]
 }
