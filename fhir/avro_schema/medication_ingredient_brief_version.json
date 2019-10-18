@@ -3,15 +3,15 @@
    "name" : "medication_ingredient_brief_version",
    "namespace" : "http://hl7.org/fhir",
    "fields" : [
-      { "name" : "id" , "type" : "string" },
-      { "name" : "coding_system" , "type" : "string" },
-      { "name" : "coding_code" , "type" : "string" },
-      { "name" : "coding_display" , "type" : "string" },
-      { "name" : "numerator_value" , "type" : "int" },
-      { "name" : "numerator_system" , "type" : "string" },
-      { "name" : "numerator_code" , "type" : "string" },
-      { "name" : "denominator_value" , "type" : "int" },
-      { "name" : "denominator_system" , "type" : "string" },
-      { "name" : "denominator_code" , "type" : "string" }
+      { "name" : "id" , "type" : ["string", "null" ] },
+      { "name" : "coding_system" , "type" : ["string", "null" ] },
+      { "name" : "coding_code" , "type" : ["string", "null" ] },
+      { "name" : "coding_display" , "type" : ["string", "null" ] },
+      { "name" : "numerator_value" , "type" : ["int", "null" ] },
+      { "name" : "numerator_system" , "type" : ["string", "null" ] },
+      { "name" : "numerator_code" , "type" : ["string", "null" ] },
+      { "name" : "denominator_value" , "type" : ["int", "null" ] },
+      { "name" : "denominator_system" , "type" : ["string", "null" ] },
+      { "name" : "denominator_code" , "type" : ["string", "null" ] }
    ]
 }
