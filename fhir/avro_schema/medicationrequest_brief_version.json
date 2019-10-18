@@ -4,7 +4,7 @@
    "namespace" : "http://hl7.org/fhir",
    "fields" : [
       { "name" : "id" , "type" : ["string", "null" ] },
-      { "name" : "Med_id" , "type" : ["string", "null" ] },
+      { "name" : "Med_id" , "type" : "string" },
       { "name" : "Med_code_system" , "type" : ["string", "null" ] },
       { "name" : "Med_code_code" , "type" : ["string", "null" ] },
       { "name" : "Med_code_display" , "type" : ["string", "null" ] },
