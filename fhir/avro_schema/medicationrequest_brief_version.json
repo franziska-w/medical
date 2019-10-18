@@ -1,6 +1,6 @@
 {
    "type" : "record",
-   "name" : "medication_request_brief_version",
+   "name" : "medicationrequest_brief_version",
    "namespace" : "http://hl7.org/fhir",
    "fields" : [
       { "name" : "id" , "type" : "string" },
