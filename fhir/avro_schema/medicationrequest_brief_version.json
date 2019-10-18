@@ -3,13 +3,14 @@
    "name" : "medicationrequest_brief_version",
    "namespace" : "http://hl7.org/fhir",
    "fields" : [
-      { "name" : "id" , "type" : "string" },
-      { "name" : "Med_id" , "type" : "string" },
-      { "name" : "Med_code_system" , "type" : "string" },
-      { "name" : "Med_code_code" , "type" : "string" },
-      { "name" : "Med_code_display" , "type" : "string" },
-      { "name" : "subject_reference" , "type" : "string" },
-      { "name" : "subject_type" , "type" : "string" },
-      { "name" : "subject_display" , "type" : "string" }
+      { "name" : "id" , "type" : ["string", "null" ] },
+      { "name" : "Med_id" , "type" : ["string", "null" ] },
+      { "name" : "Med_code_system" , "type" : ["string", "null" ] },
+      { "name" : "Med_code_code" , "type" : ["string", "null" ] },
+      { "name" : "Med_code_display" , "type" : ["string", "null" ] },
+      { "name" : "medicationRef" , "type" : ["string", "null" ] },
+      { "name" : "subject_reference" , "type" : ["string", "null" ] },
+      { "name" : "subject_type" , "type" : ["string", "null" ] },
+      { "name" : "subject_display" , "type" : ["string", "null" ] }
    ]
 }
