@@ -11,7 +11,6 @@
       { "name" : "status" , "type" : ["string", "null" ] },
       { "name" : "authoredOn" , "type" : ["string", "null" ] },
       { "name" : "subject_reference" , "type" : ["string", "null" ] },
-      { "name" : "subject_type" , "type" : ["string", "null" ] },
       { "name" : "subject_display" , "type" : ["string", "null" ] }
    ]
 }
