@@ -23,6 +23,8 @@ CREATE TABLE medicationrequest (
     ,Med_code_system NVARCHAR(255) NULL
     ,Med_code_code NVARCHAR(255) NULL
     ,Med_code_display NVARCHAR(255) NULL
+    ,status NVARCHAR(255) NULL
+    ,authoredOn NVARCHAR(255) NULL
     ,subject_reference NVARCHAR(255) NULL
     ,subject_display NVARCHAR(255) NULL
 );
