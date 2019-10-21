@@ -8,7 +8,7 @@
 <xsl:variable name="customNewLine" select="'&#xa;'"/>
 
 <!-- Header information:
-     id;Med_id;Med_code_system;Med_code_code;Med_code_display;subject_reference;subject_display -->
+     id;Med_id;Med_code_system;Med_code_code;Med_code_display;status;authoredOn;subject_reference;subject_display -->
 
 <!-- ======================================================================= -->
 <!-- Template:    Match id node and MedicationRequest node                   -->
@@ -26,6 +26,9 @@
     <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:code/@value"/><xsl:value-of select="$customSeparator"/>
     <xsl:value-of select="fhir:contained/fhir:Medication/fhir:code/fhir:coding/fhir:display/@value"/><xsl:value-of select="$customSeparator"/>
  
+    <xsl:value-of select="fhir:status/@value"/><xsl:value-of select="$customSeparator"/>
+    <xsl:value-of select="fhir:authoredOn/@value"/><xsl:value-of select="$customSeparator"/>
+    
     <!-- MedicationRequest/subject has FHIR data type: Reference -->
     <xsl:value-of select="fhir:subject/fhir:reference/@value"/><xsl:value-of select="$customSeparator"/>
     <!-- add subject identifier here if required -->
