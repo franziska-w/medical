@@ -8,7 +8,8 @@
       { "name" : "Med_code_system" , "type" : ["string", "null" ] },
       { "name" : "Med_code_code" , "type" : ["string", "null" ] },
       { "name" : "Med_code_display" , "type" : ["string", "null" ] },
-      { "name" : "medicationRef" , "type" : ["string", "null" ] },
+      { "name" : "status" , "type" : ["string", "null" ] },
+      { "name" : "authoredOn" , "type" : ["string", "null" ] },
       { "name" : "subject_reference" , "type" : ["string", "null" ] },
       { "name" : "subject_type" , "type" : ["string", "null" ] },
       { "name" : "subject_display" , "type" : ["string", "null" ] }
