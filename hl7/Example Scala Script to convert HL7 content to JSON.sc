@@ -60,5 +60,4 @@ for(message_component <- message_components){
 val json: JsValue = Json.toJson(content_map)
 
 //print result
-val readableString: String = Json.prettyPrint(json)
-println(readableString)
+println(Json.prettyPrint(json))
