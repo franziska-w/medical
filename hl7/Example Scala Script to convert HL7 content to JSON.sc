@@ -5,7 +5,7 @@
 
 
 //LOAD PACKAGES
-import play.api.libs.json._
+import play.api.libs.json.{JsValue, Json}
 
 
 //HL7 INPUT DATA
@@ -26,7 +26,7 @@ var component_types: Seq[String] = Seq()
 //split message into components
 val message_components = message_content.split("""\n""").map(_.trim)
 
-//get count components of same type
+//count components of same type
 for(message_component <- message_components){
   val component_type = message_component.split("""\|""")(0)
   component_types = component_types :+ component_type
@@ -38,10 +38,14 @@ val component_type_count = component_types.groupBy(identity).mapValues(_.size)
 for(message_component <- message_components){
   val component_values = message_component.split("""\|""")
   var component_type: String = component_values(0)
-  if(component_type_count(component_type) > 1) {
+  
+  //if the component type occurs more than once, concatenate count to type
+  if(component_type_count(component_type) > 1){
     component_type_counter(component_type) += 1
     component_type = component_type + "_" + component_type_counter(component_type)
   }
+  
+  //write content map entry
   var i: Int = -1
   for(component_value <- component_values){
     i += 1
