@@ -1,2 +1,2 @@
 # medical
-Various resoruces for processing medical or clinical data.
+Various resoruces for processing medical data.
