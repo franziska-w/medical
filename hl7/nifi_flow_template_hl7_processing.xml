@@ -4,8 +4,133 @@
     <groupId>fc3410cb-016c-1000-2b16-95fa34ee485a</groupId>
     <name>nifi_flow_template_hl7_processing</name>
     <snippet>
+        <connections>
+            <id>14efb06d-0ad9-3912-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>cf87c716-7b55-3396-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>08ab4292-d75a-3546-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>7d30b4ba-57c3-39d0-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>3e7cb9d8-cf55-33ea-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>941a61c8-9922-3f8d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>c3bee302-7b3e-338e-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>941a61c8-9922-3f8d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>94f46a9d-2d9c-3afa-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>ce9a2d8d-dcb0-357a-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>d4972c82-175e-32b6-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>3e7cb9d8-cf55-33ea-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>d57bc6f4-e3d0-3134-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>08ab4292-d75a-3546-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>c5f43f76-207f-3930-0000-000000000000</groupId>
+                <id>d4972c82-175e-32b6-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
         <controllerServices>
-            <id>074eb097-7cd1-3f52-0000-000000000000</id>
+            <id>9c1f2748-1bed-3059-0000-000000000000</id>
             <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
             <bundle>
                 <artifact>nifi-MapAttributeNames-nar</artifact>
@@ -72,12 +197,287 @@
             <state>ENABLED</state>
             <type>CSVToMapServicePkg.StandardMyService</type>
         </controllerServices>
-        <processors>
-            <id>e0fe2cd8-ea99-3428-0000-000000000000</id>
+        <labels>
+            <id>f7040ab4-0174-3489-0000-000000000000</id>
             <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
                 <y>0.0</y>
+            </position>
+            <height>1111.8967590332031</height>
+            <label>HL7 Processing Example</label>
+            <style>
+                <entry>
+                    <key>background-color</key>
+                    <value>#d6ffea</value>
+                </entry>
+                <entry>
+                    <key>font-size</key>
+                    <value>14px</value>
+                </entry>
+            </style>
+            <width>397.372314453125</width>
+        </labels>
+        <processors>
+            <id>08ab4292-d75a-3546-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <position>
+                <x>23.91914083818665</x>
+                <y>783.388241390408</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>jolt-transform</key>
+                        <value>
+                            <name>jolt-transform</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-class</key>
+                        <value>
+                            <name>jolt-custom-class</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-modules</key>
+                        <value>
+                            <name>jolt-custom-modules</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>jolt-spec</key>
+                        <value>
+                            <name>jolt-spec</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Transform Cache Size</key>
+                        <value>
+                            <name>Transform Cache Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>pretty_print</key>
+                        <value>
+                            <name>pretty_print</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>jolt-transform</key>
+                        <value>jolt-transform-shift</value>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-class</key>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-modules</key>
+                    </entry>
+                    <entry>
+                        <key>jolt-spec</key>
+                        <value>{
+   "file.group":"file.group",
+   "PV2.AdmitReason.Identifier":"PV2.AdmitReason.Identifier",
+   "NK1.NKName.FamilyName":"NK1.NKName.FamilyName",
+   "IN1_1.InsuranceCompanyAddress.StreetAddress":"IN1_1.InsuranceCompanyAddress.StreetAddress",
+   "MSH.SendingApplication.NamespaceID":"MSH.SendingApplication.NamespaceID",
+   "MSH.ReceivingApplication.NamespaceID":"MSH.ReceivingApplication.NamespaceID",
+   "MSH.ContinuationPointer":"MSH.ContinuationPointer",
+   "PV1.AdmissionType":"PV1.AdmissionType",
+   "PV2.AccommodationCode.Text":"PV2.AccommodationCode.Text",
+   "IN1_1.GroupName.OrganizationName":"IN1_1.GroupName.OrganizationName",
+   "ZAS_1.AllgemeineZuzahlungsbefreiungGueltigBis":"ZAS_1.AllgemeineZuzahlungsbefreiungGueltigBis",
+   "MSH.CharacterSet":"MSH.CharacterSet",
+   "ZAS_1.ArtDerAllgemeinenZuzahlungsbefreiung":"ZAS_1.ArtDerAllgemeinenZuzahlungsbefreiung",
+   "EVN.RecordedDateTime":"EVN.RecordedDateTime",
+   "NK1.Relationship.Identifier":"NK1.Relationship.Identifier",
+   "PV1.HospitalService":"PV1.HospitalService",
+   "MSH.VersionID.VersionID":"MSH.VersionID.VersionID",
+   "ZVK_1.VKNR":"ZVK_1.VKNR",
+   "MSH.MessageType.MessageStructure":"MSH.MessageType.MessageStructure",
+   "NK1.Relationship.Text":"NK1.Relationship.Text",
+   "IN1_1.InsuranceCompanyAddress.Country":"IN1_1.InsuranceCompanyAddress.Country",
+   "PID.PhoneNumberHome.LocalNumber":"PID.PhoneNumberHome.LocalNumber",
+   "PV1.ConsultingDoctor.NameTypeCode":"PV1.ConsultingDoctor.NameTypeCode",
+   "NK1.NKName.NameTypeCode":"NK1.NKName.NameTypeCode",
+   "PID.PatientAddress.StreetAddress":"PID.PatientAddress.StreetAddress",
+   "ZGK_1.WOPKennzeichen":"ZGK_1.WOPKennzeichen",
+   "PID.PhoneNumberHome.TelecommunicationUseCode":"PID.PhoneNumberHome.TelecommunicationUseCode",
+   "IN1_1.InsuredsAdministrativeSex":"IN1_1.InsuredsAdministrativeSex",
+   "IN1_1.PlanType":"IN1_1.PlanType",
+   "NK1.NKName.GivenName":"NK1.NKName.GivenName",
+   "PID.MaritalStatus.Identifier":"PID.MaritalStatus.Identifier",
+   "PV1.ConsultingDoctor.GivenName":"PV1.ConsultingDoctor.GivenName",
+   "PV1.SetIDPV1":"PV1.SetIDPV1",
+   "MSH.DateTimeOfMessage":"MSH.DateTimeOfMessage",
+   "IN1_1.TypeOfAgreementCode":"IN1_1.TypeOfAgreementCode",
+   "PV1.ChargePriceIndicator":"PV1.ChargePriceIndicator",
+   "IN1_1.InsuredsAddress.AddressType":"IN1_1.InsuredsAddress.AddressType",
+   "file.owner":"file.owner",
+   "PID.PatientAddress.Country":"PID.PatientAddress.Country",
+   "PV1.ConsultingDoctor.IDNumber":"PV1.ConsultingDoctor.IDNumber",
+   "MSH.MessageType.TriggerEvent":"MSH.MessageType.TriggerEvent",
+   "PID.Religion.Identifier":"PID.Religion.Identifier",
+   "PID.PatientName.FamilyName":"PID.PatientName.FamilyName",
+   "ZVK_1.VornameDesHauptversicherten":"ZVK_1.VornameDesHauptversicherten",
+   "IN2_1.Religion.Identifier":"IN2_1.Religion.Identifier",
+   "MSH.ApplicationAcknowledgmentType":"MSH.ApplicationAcknowledgmentType",
+   "PID.AlternatePatientIDPID.IDNumber":"PID.AlternatePatientIDPID.IDNumber",
+   "IN1_1.InsuredsIDNumber.ExpirationDate":"IN1_1.InsuredsIDNumber.ExpirationDate",
+   "PV1.AssignedPatientLocation.LocationStatus":"PV1.AssignedPatientLocation.LocationStatus",
+   "PID.AdministrativeSex":"PID.AdministrativeSex",
+   "PID.PhoneNumberHome.UnformattedTelephoneNumber":"PID.PhoneNumberHome.UnformattedTelephoneNumber",
+   "PV1.AssignedPatientLocation.Facility":"PV1.AssignedPatientLocation.Facility",
+   "file.lastModifiedTime":"file.lastModifiedTime",
+   "IN1_1.Insured_sBirthPlace":"IN1_1.Insured_sBirthPlace",
+   "IN1_1.InsuranceCompanyAddress.ZipOrPostalCode":"IN1_1.InsuranceCompanyAddress.ZipOrPostalCode",
+   "PV1.ReferringDoctor.GivenName":"PV1.ReferringDoctor.GivenName",
+   "IN1_1.CoordOfBenPriority":"IN1_1.CoordOfBenPriority",
+   "IN1_1.SetIDIN1":"IN1_1.SetIDIN1",
+   "PID.PatientAddress.City":"PID.PatientAddress.City",
+   "PID.DateTimeOfBirth":"PID.DateTimeOfBirth",
+   "PID.PatientID.IDNumber":"PID.PatientID.IDNumber",
+   "IN1_1.InsurancePlanID.Identifier":"IN1_1.InsurancePlanID.Identifier",
+   "IN1_1.GroupName.IdentifierTypeCode":"IN1_1.GroupName.IdentifierTypeCode",
+   "ZVK_1.AdresseDesHauptversichertenOrt":"ZVK_1.AdresseDesHauptversichertenOrt",
+   "ZVK_1.KarteEinlesedatum":"ZVK_1.KarteEinlesedatum",
+   "PID.PatientIdentifierList.IDNumber":"PID.PatientIdentifierList.IDNumber",
+   "ZBE_1.MovementID":"ZBE_1.MovementID",
+   "MSH.ReceivingFacility.NamespaceID":"MSH.ReceivingFacility.NamespaceID",
+   "PV1.ReferringDoctor.IdentifierTypeCode":"PV1.ReferringDoctor.IdentifierTypeCode",
+   "MSH.SendingFacility.NamespaceID":"MSH.SendingFacility.NamespaceID",
+   "IN2_1.Citizenship.Identifier":"IN2_1.Citizenship.Identifier",
+   "IN1_1.InsuredsAddress.StreetAddress":"IN1_1.InsuredsAddress.StreetAddress",
+   "MSH.MessageControlID":"MSH.MessageControlID",
+   "ZVK_1.AdresseDesHauptversichertenPostleitzahl":"ZVK_1.AdresseDesHauptversichertenPostleitzahl",
+   "IN1_1.InsuranceCompanyName.OrganizationName":"IN1_1.InsuranceCompanyName.OrganizationName",
+   "ZVK_1.AdresseDesHauptversichertenStrasseHausnummer":"ZVK_1.AdresseDesHauptversichertenStrasseHausnummer",
+   "MSH.ProcessingID.ProcessingID":"MSH.ProcessingID.ProcessingID",
+   "NK1.PhoneNumber.TelecommunicationEquipmentType":"NK1.PhoneNumber.TelecommunicationEquipmentType",
+   "IN1_1.InsuredsIDNumber.IDNumber":"IN1_1.InsuredsIDNumber.IDNumber",
+   "EVN.EventTypeCode":"EVN.EventTypeCode",
+   "PID.PhoneNumberHome.TelecommunicationEquipmentType":"PID.PhoneNumberHome.TelecommunicationEquipmentType",
+   "PID.BirthPlace":"PID.BirthPlace",
+   "PID.Citizenship.Identifier":"PID.Citizenship.Identifier",
+   "PID.PatientDeathIndicator":"PID.PatientDeathIndicator",
+   "IN1_1.InsuredsAddress.City":"IN1_1.InsuredsAddress.City",
+   "IN1_1.NameOfInsured.GivenName":"IN1_1.NameOfInsured.GivenName",
+   "PV1.VIPIndicator":"PV1.VIPIndicator",
+   "ZVK_1.NachnameDesHauptversicherten":"ZVK_1.NachnameDesHauptversicherten",
+   "IN1_1.InsuranceCompanyID.IdentifierTypeCode":"IN1_1.InsuranceCompanyID.IdentifierTypeCode",
+   "MSH.MessageType.MessageCode":"MSH.MessageType.MessageCode",
+   "ZVK_1.Versicherungsnummer":"ZVK_1.Versicherungsnummer",
+   "NK1.PhoneNumber.TelephoneNumber":"NK1.PhoneNumber.TelephoneNumber",
+   "PV1.VisitIndicator":"PV1.VisitIndicator",
+   "IN1_1.InsuranceCompanyID.IDNumber":"IN1_1.InsuranceCompanyID.IDNumber",
+   "IN1_1.GroupName.OrganizationNameTypeCode":"IN1_1.GroupName.OrganizationNameTypeCode",
+   "IN2_1.PolicyTypeAmount.MoneyOrPercentageQuantity":"IN2_1.PolicyTypeAmount.MoneyOrPercentageQuantity",
+   "ZVK.Versicherungsstatus":"ZVK.Versicherungsstatus",
+   "PID.PatientAddress.ZipOrPostalCode":"PID.PatientAddress.ZipOrPostalCode",
+   "PV1.ConsultingDoctor.FamilyName":"PV1.ConsultingDoctor.FamilyName",
+   "PV1.ReferringDoctor.DegreeEgMD":"PV1.ReferringDoctor.DegreeEgMD",
+   "ZBE_1.MovementAction":"ZBE_1.MovementAction",
+   "PID.PatientAddress.AddressType":"PID.PatientAddress.AddressType",
+   "PID.PatientName.GivenName":"PID.PatientName.GivenName",
+   "PV2.AccommodationCode.NameOfCodingSystem":"PV2.AccommodationCode.NameOfCodingSystem",
+   "ZVK.AdresseDesHauptversichertenLaenderkennzeichen":"ZVK.AdresseDesHauptversichertenLaenderkennzeichen",
+   "IN2_1.InsuredsSocialSecurityNumber":"IN2_1.InsuredsSocialSecurityNumber",
+   "ZVK.NameDerVersicherungsgesellschaft":"ZVK.NameDerVersicherungsgesellschaft",
+   "PV2.AdmitReason.Text":"PV2.AdmitReason.Text",
+   "PV2.VisitDescription":"PV2.VisitDescription",
+   "IN2_1.InsuredsEmployeeID.IDNumber":"IN2_1.InsuredsEmployeeID.IDNumber",
+   "PV1.ReferringDoctor.FamilyName":"PV1.ReferringDoctor.FamilyName",
+   "ZVK.IKDerVersicherungsgesellschaft":"ZVK.IKDerVersicherungsgesellschaft",
+   "EVN.OperatorID.IDNumber":"EVN.OperatorID.IDNumber",
+   "file.permissions":"file.permissions",
+   "IN2_1.InsuredsPhoneNumberHome.TelephoneNumber":"IN2_1.InsuredsPhoneNumberHome.TelephoneNumber",
+   "PV1.PatientClass":"PV1.PatientClass",
+   "PV2.AccommodationCode.Identifier":"PV2.AccommodationCode.Identifier",
+   "IN1_1.NameOfInsured.FamilyName":"IN1_1.NameOfInsured.FamilyName",
+   "EVN.EventOccurred":"EVN.EventOccurred",
+   "ZVK.GeburtsdatumDesHauptversicherten":"ZVK.GeburtsdatumDesHauptversicherten",
+   "NK1.SetIDNK1":"NK1.SetIDNK1",
+   "file.creationTime":"file.creationTime",
+   "IN1_1.PolicyNumber":"IN1_1.PolicyNumber",
+   "IN1_1.InsuredsAddress.Country":"IN1_1.InsuredsAddress.Country",
+   "MSH.EncodingCharacters":"MSH.EncodingCharacters",
+   "IN1_1.InsuranceCompanyAddress.City":"IN1_1.InsuranceCompanyAddress.City",
+   "ZAS_1.AllgemeineZuzahlungsbefreiungGueltigAb":"ZAS_1.AllgemeineZuzahlungsbefreiungGueltigAb",
+   "PV1.VisitNumber.IDNumber":"PV1.VisitNumber.IDNumber",
+   "IN1_1.InsuredsDateOfBirth":"IN1_1.InsuredsDateOfBirth",
+   "PV2.PatientStatusCode":"PV2.PatientStatusCode",
+   "PV1.AssignedPatientLocation.PersonLocationType":"PV1.AssignedPatientLocation.PersonLocationType",
+   "IN2_1.PolicyTypeAmount.AmountClass":"IN2_1.PolicyTypeAmount.AmountClass",
+   "PID.SetIDPID":"PID.SetIDPID",
+   "PV2.ExpectedDischargeDateTime":"PV2.ExpectedDischargeDateTime",
+   "IN2_1.PublicityCode.Identifier":"IN2_1.PublicityCode.Identifier",
+   "PV1.ConsultingDoctor.DegreeEgMD":"PV1.ConsultingDoctor.DegreeEgMD",
+   "PV2.NewbornBabyIndicator":"PV2.NewbornBabyIndicator",
+   "MSH.FieldSeparator":"MSH.FieldSeparator",
+   "EVN.EventReasonCode":"EVN.EventReasonCode",
+   "IN1_1.InsuranceCompanyAddress.AddressType":"IN1_1.InsuranceCompanyAddress.AddressType",
+   "MSH.AcceptAcknowledgmentType":"MSH.AcceptAcknowledgmentType",
+   "PID.PhoneNumberHome.TelephoneNumber":"PID.PhoneNumberHome.TelephoneNumber",
+   "PV1.AssignedPatientLocation.PointOfCare":"PV1.AssignedPatientLocation.PointOfCare",
+   "file.lastAccessTime":"file.lastAccessTime",
+   "PV2.AdmitReason.NameOfCodingSystem":"PV2.AdmitReason.NameOfCodingSystem",
+   "PV1.ReferringDoctor.IDNumber":"PV1.ReferringDoctor.IDNumber",
+   "ZGK_1.Kartentyp":"ZGK_1.Kartentyp",
+   "IN1_1.VerificationDateTime":"IN1_1.VerificationDateTime",
+   "PV1.AdmitDateTime":"PV1.AdmitDateTime",
+   "ZBE_1.StartMovementDateTime":"ZBE_1.StartMovementDateTime",
+   "IN1_1.InsuredsAddress.ZipOrPostalCode":"IN1_1.InsuredsAddress.ZipOrPostalCode",
+   "PID.PatientName.NameTypeCode":"PID.PatientName.NameTypeCode",
+   "PV1.ReferringDoctor.NameTypeCode":"PV1.ReferringDoctor.NameTypeCode"
+}</value>
+                    </entry>
+                    <entry>
+                        <key>Transform Cache Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>pretty_print</key>
+                        <value>true</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>JoltTransformJSON</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
+        </processors>
+        <processors>
+            <id>3e7cb9d8-cf55-33ea-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <position>
+                <x>23.63203146318665</x>
+                <y>409.87130413454906</y>
             </position>
             <bundle>
                 <artifact>nifi-MapAttributeNames-nar</artifact>
@@ -103,7 +503,7 @@
                 <properties>
                     <entry>
                         <key>CSVToMapService</key>
-                        <value>074eb097-7cd1-3f52-0000-000000000000</value>
+                        <value>9c1f2748-1bed-3059-0000-000000000000</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -125,6 +525,465 @@
             <style/>
             <type>MapAttributeNamesPkg.MyProcessor</type>
         </processors>
+        <processors>
+            <id>941a61c8-9922-3f8d-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <position>
+                <x>24.838308742162553</x>
+                <y>225.93392307778777</y>
+            </position>
+            <bundle>
+                <artifact>nifi-ExtractHL7Attributes-nar</artifact>
+                <group>nifi</group>
+                <version>1.10.0-SNAPSHOT</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Character Encoding</key>
+                        <value>
+                            <name>Character Encoding</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>use-segment-names</key>
+                        <value>
+                            <name>use-segment-names</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>parse-segment-fields</key>
+                        <value>
+                            <name>parse-segment-fields</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>skip-validation</key>
+                        <value>
+                            <name>skip-validation</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>hl7-input-version</key>
+                        <value>
+                            <name>hl7-input-version</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Character Encoding</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>use-segment-names</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>parse-segment-fields</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>skip-validation</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>hl7-input-version</key>
+                        <value>2.5</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ExtractHL7Attributes</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>ExtractHL7AttributesPkg.MyProcessor</type>
+        </processors>
+        <processors>
+            <id>94f46a9d-2d9c-3afa-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <position>
+                <x>30.25638443218122</x>
+                <y>28.415920190450834</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Input Directory</key>
+                        <value>
+                            <name>Input Directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>File Filter</key>
+                        <value>
+                            <name>File Filter</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Path Filter</key>
+                        <value>
+                            <name>Path Filter</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Keep Source File</key>
+                        <value>
+                            <name>Keep Source File</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Recurse Subdirectories</key>
+                        <value>
+                            <name>Recurse Subdirectories</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Polling Interval</key>
+                        <value>
+                            <name>Polling Interval</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Ignore Hidden Files</key>
+                        <value>
+                            <name>Ignore Hidden Files</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Age</key>
+                        <value>
+                            <name>Minimum File Age</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Age</key>
+                        <value>
+                            <name>Maximum File Age</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Size</key>
+                        <value>
+                            <name>Minimum File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Size</key>
+                        <value>
+                            <name>Maximum File Size</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Input Directory</key>
+                        <value>/home/ubuntu/test_files/input_hl7</value>
+                    </entry>
+                    <entry>
+                        <key>File Filter</key>
+                        <value>[^\.].*</value>
+                    </entry>
+                    <entry>
+                        <key>Path Filter</key>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>10</value>
+                    </entry>
+                    <entry>
+                        <key>Keep Source File</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Recurse Subdirectories</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Polling Interval</key>
+                        <value>0 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Ignore Hidden Files</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Age</key>
+                        <value>0 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Age</key>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Size</key>
+                        <value>0 B</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Size</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GetFile</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GetFile</type>
+        </processors>
+        <processors>
+            <id>cf87c716-7b55-3396-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <position>
+                <x>22.175527980443803</x>
+                <y>970.4427121402878</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Directory</key>
+                        <value>
+                            <name>Directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>
+                            <name>Conflict Resolution Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Create Missing Directories</key>
+                        <value>
+                            <name>Create Missing Directories</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Count</key>
+                        <value>
+                            <name>Maximum File Count</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Last Modified Time</key>
+                        <value>
+                            <name>Last Modified Time</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Permissions</key>
+                        <value>
+                            <name>Permissions</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                        <value>
+                            <name>Owner</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Group</key>
+                        <value>
+                            <name>Group</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Directory</key>
+                        <value>/home/ubuntu/test_files/success</value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>fail</value>
+                    </entry>
+                    <entry>
+                        <key>Create Missing Directories</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Count</key>
+                    </entry>
+                    <entry>
+                        <key>Last Modified Time</key>
+                    </entry>
+                    <entry>
+                        <key>Permissions</key>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                    </entry>
+                    <entry>
+                        <key>Group</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutFile: Result JSON</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style>
+                <entry>
+                    <key>background-color</key>
+                    <value>#ffffff</value>
+                </entry>
+            </style>
+            <type>org.apache.nifi.processors.standard.PutFile</type>
+        </processors>
+        <processors>
+            <id>d4972c82-175e-32b6-0000-000000000000</id>
+            <parentGroupId>c5f43f76-207f-3930-0000-000000000000</parentGroupId>
+            <position>
+                <x>25.125479152318803</x>
+                <y>603.6385129215378</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Attributes List</key>
+                        <value>
+                            <name>Attributes List</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-json-regex</key>
+                        <value>
+                            <name>attributes-to-json-regex</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Destination</key>
+                        <value>
+                            <name>Destination</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Include Core Attributes</key>
+                        <value>
+                            <name>Include Core Attributes</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value</key>
+                        <value>
+                            <name>Null Value</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Attributes List</key>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-json-regex</key>
+                    </entry>
+                    <entry>
+                        <key>Destination</key>
+                        <value>flowfile-content</value>
+                    </entry>
+                    <entry>
+                        <key>Include Core Attributes</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value</key>
+                        <value>false</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>AttributesToJSON</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.AttributesToJSON</type>
+        </processors>
     </snippet>
-    <timestamp>11/08/2019 15:28:08 CET</timestamp>
+    <timestamp>11/12/2019 15:06:04 CET</timestamp>
 </template>
