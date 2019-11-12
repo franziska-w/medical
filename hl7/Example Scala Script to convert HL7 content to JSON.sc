@@ -1,7 +1,6 @@
 //Example Scala Script to convert HL7 content to JSON
 //Author: Franziska Weng
-//License: Attribution 4.0 International (CC BY 4.0)
-//License-URL: https://creativecommons.org/licenses/by/4.0/
+//Comment: Test script in https://scalafiddle.io/ - add library Play JSON codecs 4.0.0 before running script.
 
 
 //LOAD PACKAGES
