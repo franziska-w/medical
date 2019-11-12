@@ -44,7 +44,7 @@ for(message_component <- message_components){
     component_type = component_type + "_" + component_type_counter(component_type)
   }
   
-  //write content map entry
+  //write content map entries
   var i: Int = -1
   for(component_value <- component_values){
     i += 1
