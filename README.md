@@ -1,2 +1,2 @@
 # medical
-Various resoruces for processing medical data.
+Some example resources for processing medical or clinical data using Apache NiFi. 
